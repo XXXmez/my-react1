@@ -1,6 +1,8 @@
 .App {
   min-height: 100vh;
   padding: 20px;
+  max-width: 1240px;
+  margin: 0 auto;
 }
 
 .a1 {
@@ -20,16 +22,10 @@
 
 .a3 {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 300px);
-  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
   gap: 20px;
   margin-top: 25px;
-}
-
-.b1 {
-  border: 1px solid #ffffff66;
-  border-radius: 30px;
-  padding: 30px;
 }
 
 .b2 {
@@ -67,3 +63,41 @@ main {
   line-height: 1.4;
   text-align: left;
 }
+
+/* __________________________ card */
+.card {
+  border: 6px double #666666;
+  border-radius: 30px;
+  padding: 30px;
+}
+.card-header {
+  display: flex;
+}
+.card-button {
+  margin-left: auto;
+  border: none;
+  background: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 22px;
+}
+.card-title {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.card-title-h3 {
+  font-size: 22px;
+}
+.card-line {
+  height: 1px;
+  background: #666666;
+}
+.card-description {
+  margin-top: 15px;
+}
+.card-text {
+  font-size: 14px;
+}
+/* __________________________ card */
