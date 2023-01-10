@@ -83,6 +83,20 @@ main {
 }
 .card-header {
   display: flex;
+  gap: 5px;
+}
+.card-icon-span {
+  border-radius: 16px;
+  padding: 2px 13px;
+  font-size: 12px;
+}
+.favorite {
+  border: 1px solid #d3c193;
+  color: #d3c193;
+}
+.lastwork {
+  border: 1px solid #d39393;
+  color: #d39393;
 }
 .card-button {
   /* margin-left: auto;

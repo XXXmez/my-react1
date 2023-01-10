@@ -7,7 +7,7 @@ const Main = () => {
     <>
       <About />
       {/* <Cards titleCards="Project" cb="#456461" /> */}
-      <Cards titleCards="Components" cb="#454a64" />
+      <Cards titleCards="My Components" cb="#454a64" />
     </>
   );
 };
