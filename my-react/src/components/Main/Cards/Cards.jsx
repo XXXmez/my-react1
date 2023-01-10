@@ -41,7 +41,7 @@ const arrObj = [
     id: "6",
     name: "Pagination",
     description:
-      "List component, word-translation, saves words in an array of objects, uses the state of the component to translate the word",
+      "Pagination component, accepts a link to api, returns a list of elements with pagination",
     url: "pagination",
     favorites: true,
   },
