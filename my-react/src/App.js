@@ -9,6 +9,7 @@ import AccordionPage from "./pages/AccordionPage/AccordionPage";
 import TranslatorV1Page from "./pages/Translator_v1_Page/Translator_v1_Page";
 import TranslatorV2Page from "./pages/Translator_v2_Page/Translator_v2_Page";
 import PaginationPage from "./pages/PaginationPage/PaginationPage";
+import TodoPage from "./pages/TodoPage/TodoPage";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           <Route path="/accordion" element={<AccordionPage />} />
           <Route path="/translator_v1" element={<TranslatorV1Page />} />
           <Route path="/translator_v2" element={<TranslatorV2Page />} />
-          <Route path="/pagination" element={<PaginationPage />} />
+          <Route path="/todo" element={<TodoPage />} />
         </Routes>
       </main>
       <Footer />

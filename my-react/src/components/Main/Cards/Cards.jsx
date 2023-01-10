@@ -45,6 +45,12 @@ const arrObj = [
     url: "pagination",
     favorites: true,
   },
+  {
+    id: "7",
+    name: "To-do list with sections",
+    description: "Todo",
+    url: "todo",
+  },
 ];
 
 const newArr = [...arrObj]
