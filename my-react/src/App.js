@@ -23,6 +23,7 @@ function App() {
           <Route path="/accordion" element={<AccordionPage />} />
           <Route path="/translator_v1" element={<TranslatorV1Page />} />
           <Route path="/translator_v2" element={<TranslatorV2Page />} />
+          <Route path="/pagination" element={<PaginationPage />} />
           <Route path="/todo" element={<TodoPage />} />
         </Routes>
       </main>
