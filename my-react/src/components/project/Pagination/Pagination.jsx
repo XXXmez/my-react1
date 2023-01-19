@@ -8,7 +8,7 @@ import "./Pagination.css";
 const Pagination = ({ urlBase = "" }) => {
   const [recordBase, setRecordBase] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
-  const [countItems] = useState(10);
+  const [countItems, setCountItems] = useState(10);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -20,6 +20,11 @@ const Pagination = ({ urlBase = "" }) => {
     };
     fetchData();
   }, []);
+
+  const countElementPage = (count) => {
+    setCountItems(count);
+    setCurrentPage(0);
+  };
 
   return (
     <div className="paginations">
@@ -38,6 +43,11 @@ const Pagination = ({ urlBase = "" }) => {
         />
       ) : (
         <>
+          <div>
+            <span>Сколько элементов показывать:</span>
+            <button onClick={() => countElementPage(5)}>5</button>
+            <button onClick={() => countElementPage(10)}>10</button>
+          </div>
           <Items
             itemsBase={recordBase}
             currentPage={currentPage}
